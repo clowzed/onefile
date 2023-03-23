@@ -2,7 +2,7 @@ version: "3.3"
 
 services:
   server:
-    image: clowzed/onefile:1.0.3
+    image: clowzed/onefile:2.0.0
     environment:
       - PORT=8080
       - UPLOAD_FOLDER=./tmp

@@ -26,7 +26,6 @@ async fn render_file_handler(
             match std::fs::read_to_string(key_data_file.data.get(&key).unwrap()) {
                 Ok(file) => {
                     debug!("Sending file...");
-                    println!("{}", file);
                     return actix_web::HttpResponse::Ok().content_type("").body(file);
                 }
                 Err(e) => {
